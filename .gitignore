@@ -1,0 +1,104 @@
+###Auto generated sitemaps
+/public/sitemap*
+
+### SECRETS
+.env
+.env.backup
+.env.local
+.env.testing
+.env.production
+.npmrc
+auth.json
+.cursorrules
+
+## Framework
+/storage/*.key
+/public/storage
+/public/images
+
+## Vite
+/public/hot
+/.vite
+
+## Dependencies
+/node_modules
+/vendor
+
+## Tests
+/.phpunit.cache
+.phpunit.result.cache
+/build/
+
+## Logging and Misc
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+storage/debugbar
+.phpactor.json
+
+## IDEs (remove the ones you are not using)
+/.fleet
+/.idea
+/.vscode
+
+## Build Assets (uncomment if you are auto-publishing assets)
+#/public/build
+
+## Misc lock files (remove if you are committing dependencies)
+#composer.lock
+package-lock.json
+yarn.lock
+bun.lockb
+
+### Windows template
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+### macOS template
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

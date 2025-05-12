@@ -1,0 +1,53 @@
+/* tjmpromos/bloghub-client TOC CSS*/
+input[type='radio']:focus + label,
+input[type='checkbox']:focus + label {
+    @apply ring-4 ring-accent-300 ring-offset-2;
+}
+
+nav[data-target='toc'] .nav:first-child li {
+    @apply pb-1;
+}
+
+nav[data-target='toc'] .nav > li > a {
+    @apply block border-l-2 border-transparent py-2 pl-4 text-sm font-medium text-gray-400;
+}
+
+nav[data-target='toc'] .nav > li > a:hover,
+nav[data-target='toc'] .nav > li > a:focus {
+    @apply border-gray-500 bg-gray-50 pl-4 text-gray-500;
+}
+
+nav[data-target='toc'] .nav-link.active,
+nav[data-target='toc'] .nav-link.active:hover,
+nav[data-target='toc'] .nav-link.active:focus {
+    @apply border-gray-700 bg-gray-50 pl-4 text-gray-500;
+}
+
+/* Nav: second level (shown on .active) */
+nav[data-target='toc'] .nav-link + ul {
+    @apply hidden;
+}
+
+nav[data-target='toc'] .nav .nav > li > a {
+    @apply pl-8;
+}
+
+nav[data-target='toc'] .nav .nav > li > a:hover,
+nav[data-target='toc'] .nav .nav > li > a:focus {
+    @apply pl-8;
+    /*padding-left: 29px;*/
+}
+
+nav[data-target='toc'] .nav .nav > li > .active,
+nav[data-target='toc'] .nav .nav > li > .active:hover,
+nav[data-target='toc'] .nav .nav > li > .active:focus {
+    @apply pl-8;
+}
+
+nav[data-target='toc'] .nav-link.active + ul {
+    display: block;
+}
+
+nav[data-target='toc'] .nav-link.active.current {
+    @apply border-l-accent-600 bg-accent-50/50 font-bold text-accent-600;
+}

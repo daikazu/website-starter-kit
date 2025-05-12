@@ -1,0 +1,133 @@
+/* Styling for .price-table and its children */
+.price-table {
+    /* Wrapper styling, optional */
+    display: block;
+    margin: 1rem 0;
+
+    .arbitrary {
+        td:first-child {
+            @apply !text-left;
+        }
+    }
+
+    @apply overflow-x-auto rounded-lg bg-white shadow dark:bg-neutral-700;
+    /* Rounded corners and shadow, background for contrast */
+
+    table {
+        @apply w-full table-auto border-collapse rounded-lg;
+        /* Ensure corners of the table are rounded */
+    }
+
+    caption {
+        @apply my-4 text-lg font-semibold;
+        /* Using accent for the caption */
+    }
+
+    thead th {
+        @apply border-b border-neutral-300 bg-neutral-100 px-4 py-2 text-center text-sm dark:border-neutral-600 dark:bg-neutral-800;
+        /* Accent-based text */
+    }
+
+    thead th:first-child {
+        @apply text-left;
+        /* Accent-based text */
+    }
+
+    tbody tr:nth-child(even) {
+        @apply bg-accent-100/50 dark:bg-neutral-800/50;
+        /* Rows get subtle background with accent light mode */
+    }
+
+    tbody tr:nth-child(odd) {
+        @apply bg-white dark:bg-neutral-700;
+        /* Alternating rows */
+    }
+
+    td {
+        @apply border-t border-neutral-300 px-4 py-2 text-center text-sm dark:border-neutral-600;
+        /* Accent for text */
+
+        .dollar {
+            @apply text-xs opacity-75;
+            /*vertical-align: top;*/
+        }
+    }
+
+    td:first-child {
+        @apply text-left font-bold text-accent-700 dark:text-accent-600;
+        /* Accent applied to first column text for emphasis */
+    }
+
+    /* Footnotes styling */
+
+    tfoot {
+        @apply border-t border-neutral-300 bg-neutral-100 text-sm font-medium text-neutral-700 dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-300;
+        /* Footer styles */
+    }
+
+    tfoot tr td {
+        @apply px-4 py-2 text-left;
+        /* Consistent padding and alignment */
+    }
+
+    tfoot tr td:first-child {
+        @apply rounded-bl-lg;
+        /* Rounded bottom-left corner */
+    }
+
+    tfoot tr td:last-child {
+        @apply rounded-br-lg;
+        /* Rounded bottom-right corner */
+    }
+
+    /* Optional: Add spacing if needed around footer text */
+
+    tfoot td span {
+        @apply mt-1 inline-block text-xs text-neutral-600 dark:text-neutral-400;
+        /* Smaller, subtle text for notes */
+    }
+
+    /* Styling for the sub-table */
+
+    .sub-table {
+        @apply w-full;
+
+        tbody:before {
+            @apply border-none;
+        }
+
+        tbody {
+            @apply border-none;
+        }
+
+        tbody th {
+            @apply border-none;
+        }
+
+        tbody tr:not(:first-child) {
+            @apply border-t border-neutral-300 dark:border-neutral-600;
+        }
+
+        tbody tr:nth-child(even) {
+            @apply bg-transparent;
+        }
+
+        tbody tr:nth-child(odd) {
+            @apply bg-transparent;
+        }
+
+        td {
+            @apply border-none;
+        }
+
+        td:first-child {
+            @apply border-none text-left;
+        }
+    }
+}
+
+.price-table.arbitrary {
+    td:first-child {
+        @apply text-left;
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "printWidth": 120,
+    "semi": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "wrapAttributes": "auto",
+    "sortTailwindcssClasses": true,
+    "tailwindStylesheet": "./resources/css/app.css",
+    "plugins": ["prettier-plugin-blade", "prettier-plugin-tailwindcss"],
+    "overrides": [
+        {
+            "files": "*.blade.php",
+            "options": {
+                "parser": "blade"
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+  "node_modules/lite-youtube-embed/src/lite-yt-embed.css": {
+    "file": "assets/lite-yt-embed-CiVzV6ix.css",
+    "src": "node_modules/lite-youtube-embed/src/lite-yt-embed.css",
+    "isEntry": true
+  },
+  "node_modules/lite-youtube-embed/src/lite-yt-embed.js": {
+    "file": "assets/lite-yt-embed-Dkyb9mLy.js",
+    "name": "lite-yt-embed",
+    "src": "node_modules/lite-youtube-embed/src/lite-yt-embed.js",
+    "isEntry": true
+  },
+  "resources/assets/theme/pattern-dark.svg": {
+    "file": "assets/pattern-dark-Cd_TL-sw.svg",
+    "src": "resources/assets/theme/pattern-dark.svg"
+  },
+  "resources/assets/theme/pattern-white.svg": {
+    "file": "assets/pattern-white-CamtEm5g.svg",
+    "src": "resources/assets/theme/pattern-white.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BDkVDfRo.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-FNLUazbq.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-B2ZarPwU.css"
+    ]
+  },
+  "resources/js/event-tracking.js": {
+    "file": "assets/event-tracking-DiHPoD6S.js",
+    "name": "event-tracking",
+    "src": "resources/js/event-tracking.js",
+    "isEntry": true
+  }
+}

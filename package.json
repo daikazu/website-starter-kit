@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "format": "npx prettier --write resources/",
+        "buildfphp": "npx tailwindcss@3 --input ./resources/css/filament/admin/theme.css --output ./public/css/filament/admin/theme.css --config ./resources/css/filament/admin/tailwind.config.js --minify"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "4.9.5",
+        "@tailwindcss/oxide-linux-x64-gnu": "^4.1.3",
+        "lightningcss-linux-x64-gnu": "^1.29.3"
+    },
+    "devDependencies": {
+        "@prettier/plugin-php": "^0.22.4",
+        "@tailwindcss/forms": "^0.5.10",
+        "@tailwindcss/postcss": "^4.1.3",
+        "@tailwindcss/typography": "^0.5.16",
+        "@tailwindcss/vite": "^4.1.3",
+        "concurrently": "^9.1.2",
+        "laravel-vite-plugin": "^1.2.0",
+        "lite-youtube-embed": "^0.3.3",
+        "prettier": "^3.5.3",
+        "prettier-plugin-blade": "^2.1.21",
+        "prettier-plugin-tailwindcss": "^0.6.11",
+        "tailwindcss": "^4.1.3",
+        "tailwindcss-animated": "^2.0.0",
+        "tailwindcss-debug-screens": "^3.0.1",
+        "vite": "^6.2.6"
+    }
+}
