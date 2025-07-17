@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+?>
 <section class="py-16">
     <div class="container mx-auto">
         <h2 class="mb-12 text-center text-3xl font-bold">Typography Showcase</h2>
@@ -348,3 +353,4 @@
         </div>
     </div>
 </section>
+<?php

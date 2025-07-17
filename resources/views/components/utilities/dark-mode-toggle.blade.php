@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+?>
 <div
     x-data="DarkModeToggle"
     x-id="['dark-mode-toggle']"
@@ -10,3 +15,4 @@
         <span class="sr-only" x-text="mode === 'light' ? 'Turn on dark mode' : 'Turn on light mode'"></span>
     </button>
 </div>
+<?php

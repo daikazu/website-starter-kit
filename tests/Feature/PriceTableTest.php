@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\View\Components\PriceTable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;

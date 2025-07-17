@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Middleware;
 
 use Closure;
@@ -31,9 +33,11 @@ class AddSeoDefaults
 
         seo()->csrfToken();
 
-        seo()->canonical(str(url()->current())
-            ->remove('index.php/')
-            ->removeTrailingDoubleSlash());
+        seo()->canonical(
+            str(url()->current())
+                ->remove('index.php/')
+                ->removeTrailingDoubleSlash()->toString()
+        );
 
         $this->includeFavicons();
 

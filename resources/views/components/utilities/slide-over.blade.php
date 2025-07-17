@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+?>
 @props(["title" => "Slide Over Title"])
 <div
     x-data="SlideOver"
@@ -120,3 +125,4 @@
         });
     </script>
 @endpushonce
+<?php

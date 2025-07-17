@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 //arch()->preset()->php()->ignoring('var_export');
 arch()->preset()->php();
 

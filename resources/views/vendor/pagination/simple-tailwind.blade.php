@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+?>
 @if ($paginator->hasPages())
     <nav role="navigation" aria-label="Pagination Navigation" class="flex justify-between">
         {{-- Previous Page Link --}}
@@ -35,3 +40,4 @@
         @endif
     </nav>
 @endif
+<?php 

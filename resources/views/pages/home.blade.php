@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+?>
 @seoTitle('Laravel Starter Kit')
 @seoDescription('A modern Laravel starter kit for quickly building professional websites and applications.')
 @seoImage(asset(config('app.default_social_image')))
@@ -95,3 +100,4 @@
         <x-utilities.tailwindcss-typology />
     </x-slot>
 </x-layouts.default>
+<?php

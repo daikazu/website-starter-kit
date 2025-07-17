@@ -19,18 +19,15 @@
     "src": "resources/assets/theme/pattern-white.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BDkVDfRo.css",
+    "file": "assets/app-8vAimmCR.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-FNLUazbq.js",
+    "file": "assets/app-D88mnIz0.js",
     "name": "app",
     "src": "resources/js/app.js",
-    "isEntry": true,
-    "css": [
-      "assets/app-B2ZarPwU.css"
-    ]
+    "isEntry": true
   },
   "resources/js/event-tracking.js": {
     "file": "assets/event-tracking-DiHPoD6S.js",

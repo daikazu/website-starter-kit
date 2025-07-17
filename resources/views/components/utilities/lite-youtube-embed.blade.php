@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+?>
 @props([
     "videoId",
     "title" => "Play Video",
@@ -40,3 +45,4 @@
 
     seo()->addSchema($videoSchema);
 @endphp
+<?php
