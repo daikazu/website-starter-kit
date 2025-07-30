@@ -36,7 +36,8 @@ class AddSeoDefaults
         seo()->canonical(
             str(url()->current())
                 ->remove('index.php/')
-                ->removeTrailingDoubleSlash()->toString()
+                ->removeTrailingDoubleSlash()
+                ->toString()
         );
 
         $this->includeFavicons();
