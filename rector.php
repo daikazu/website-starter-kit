@@ -17,13 +17,16 @@ return RectorConfig::configure()
         __DIR__ . '/public',
         __DIR__ . '/resources',
         __DIR__ . '/routes',
-        __DIR__ . '/tests',
     ])
     ->withSkip([
         AddOverrideAttributeToOverriddenMethodsRector::class,
         __DIR__ . '/bootstrap/cache',
         __DIR__ . '/vendor',
         __DIR__ . '/artisan',
+        __DIR__ . '/tests',
+        DeclareStrictTypesRector::class => [
+            __DIR__ . '/resources/**/*.blade.php',
+        ],
     ])
     ->withRules([
         DeclareStrictTypesRector::class,
