@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 ?>
+
 @props(['main' => null])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
@@ -27,7 +28,6 @@ declare(strict_types=1);
         @stack('body')
         <x-layouts.common.no-script />
         <x-layouts.common.skip-to-content />
-        <x-welcome-bar />
         <x-layouts.default.header />
 
         @if ($main instanceof \Illuminate\View\ComponentSlot)
@@ -42,4 +42,5 @@ declare(strict_types=1);
         @stack('scripts')
     </body>
 </html>
+
 <?php
