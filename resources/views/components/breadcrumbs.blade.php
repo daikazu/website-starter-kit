@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 @yield('breadcrumbs')
 
 @ifsectionempty('breadcrumbs')
@@ -11,4 +6,3 @@ declare(strict_types=1);
         {{ Breadcrumbs::view('breadcrumbs::json-ld', request()->route()->getName(),) }}
     @endpush
 @endifsectionempty
-<?php

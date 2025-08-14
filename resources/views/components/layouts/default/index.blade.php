@@ -1,9 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
-
 @props(['main' => null])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
@@ -42,5 +36,3 @@ declare(strict_types=1);
         @stack('scripts')
     </body>
 </html>
-
-<?php

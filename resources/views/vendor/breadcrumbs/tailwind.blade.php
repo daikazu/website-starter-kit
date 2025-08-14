@@ -1,8 +1,4 @@
-<?php
 
-declare(strict_types=1);
-
-?>
 @unless ($breadcrumbs->isEmpty())
     <nav aria-label="Breadcrumbs">
         <ul class="flex flex-wrap items-center p-0 list-none text-sm font-bold text-neutral-800 dark:text-neutral-300 gap-1">
@@ -33,4 +29,4 @@ declare(strict_types=1);
         </ul>
     </nav>
 @endunless
-<?php 
+

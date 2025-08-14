@@ -1,9 +1,4 @@
-<?php
-
-declare(strict_types=1);
-
-?>
-@props(["title" => "Slide Over Title"])
+@props(['title' => 'Slide Over Title'])
 <div
     x-data="SlideOver"
     x-on:keydown.escape.prevent.stop="close($refs.button)"
@@ -16,7 +11,7 @@ declare(strict_types=1);
         x-on:click="toggle()"
         :aria-expanded="open"
         :aria-controls="$id('slide-over-button')"
-        class="inline-flex h-10 items-center justify-center rounded-md bg-white/10 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-neutral-100 hover:text-gray-900 focus:bg-white focus:outline-hidden focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 active:bg-white disabled:pointer-events-none disabled:opacity-50"
+        class="inline-flex h-10 items-center justify-center rounded-md bg-white/10 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-neutral-100 hover:text-gray-900 focus:bg-white focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 focus:outline-hidden active:bg-white disabled:pointer-events-none disabled:opacity-50"
     >
         <x-heroicon-o-bars-3 class="h-6 w-6 fill-current" aria-hidden="true" />
         <span class="sr-only">Open</span>
@@ -28,7 +23,7 @@ declare(strict_types=1);
                 x-on:keydown.window.escape="close($refs.button)"
                 x-transition.opacity.duration.600ms
                 x-on:click="close($refs.button)"
-                class="fixed inset-0 bg-black bg-opacity-50"
+                class="bg-opacity-50 fixed inset-0 bg-black"
             ></div>
             <div class="fixed inset-0 overflow-clip">
                 <div class="absolute inset-0 overflow-clip">
@@ -45,7 +40,7 @@ declare(strict_types=1);
                             x-transition:leave="transform transition duration-500 ease-in-out sm:duration-700"
                             x-transition:leave-start="translate-x-0"
                             x-transition:leave-end="translate-x-full"
-                            @class(["w-screen", "max-w-md" => ! $attributes->has("full"), "max-w-full" => $attributes->has("full")])
+                            @class(['w-screen', 'max-w-md' => ! $attributes->has('full'), 'max-w-full' => $attributes->has('full')])
                         >
                             <div
                                 class="flex h-full flex-col overflow-y-scroll border-l border-neutral-100/70 bg-white py-5 shadow-lg"
@@ -53,7 +48,7 @@ declare(strict_types=1);
                                 <div class="px-4 sm:px-5">
                                     <div class="flex items-start justify-between pb-1">
                                         <h2
-                                            class="text-base font-semibold leading-6 text-gray-900"
+                                            class="text-base leading-6 font-semibold text-gray-900"
                                             id="slide-over-title"
                                         >
                                             {{ $title }}
@@ -61,7 +56,7 @@ declare(strict_types=1);
                                         <div class="ml-3 flex h-auto items-center">
                                             <button
                                                 x-on:click="close($refs.button)"
-                                                class="absolute right-0 top-0 z-30 mr-5 mt-4 flex items-center justify-center space-x-1 rounded-md border border-neutral-200 px-3 py-2 text-xs font-medium uppercase text-neutral-600 hover:bg-neutral-100"
+                                                class="absolute top-0 right-0 z-30 mt-4 mr-5 flex items-center justify-center space-x-1 rounded-md border border-neutral-200 px-3 py-2 text-xs font-medium text-neutral-600 uppercase hover:bg-neutral-100"
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +95,7 @@ declare(strict_types=1);
     </template>
 </div>
 
-@pushonce("scripts")
+@pushonce('scripts')
     <script>
         document.addEventListener('alpine:init', () => {
             Alpine.data('SlideOver', () => ({
@@ -125,4 +120,3 @@ declare(strict_types=1);
         });
     </script>
 @endpushonce
-<?php

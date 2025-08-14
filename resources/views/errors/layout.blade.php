@@ -1,15 +1,10 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>@yield("title")</title>
+        <title>@yield('title')</title>
 
         <!-- Styles -->
         <style>
@@ -65,10 +60,9 @@ declare(strict_types=1);
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title">
-                    @yield("message")
+                    @yield('message')
                 </div>
             </div>
         </div>
     </body>
 </html>
-<?php

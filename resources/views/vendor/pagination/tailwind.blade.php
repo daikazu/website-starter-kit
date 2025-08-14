@@ -1,8 +1,4 @@
-<?php
 
-declare(strict_types=1);
-
-?>
 @if ($paginator->hasPages())
     <nav role="navigation" aria-label="{{ __("Pagination Navigation") }}" class="flex items-center justify-between">
         <div class="flex flex-1 justify-between sm:hidden">
@@ -165,4 +161,4 @@ declare(strict_types=1);
         </div>
     </nav>
 @endif
-<?php 
+

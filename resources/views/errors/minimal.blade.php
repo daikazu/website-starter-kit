@@ -1,15 +1,10 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>@yield("title")</title>
+        <title>@yield('title')</title>
 
         <style>
             /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -464,20 +459,19 @@ declare(strict_types=1);
     </head>
     <body class="antialiased">
         <div
-            class="items-top relative flex min-h-screen justify-center bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0"
+            class="items-top relative flex min-h-screen justify-center bg-gray-100 sm:items-center sm:pt-0 dark:bg-gray-900"
         >
             <div class="mx-auto max-w-xl sm:px-6 lg:px-8">
                 <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
                     <div class="border-r border-gray-400 px-4 text-lg tracking-wider text-gray-500">
-                        @yield("code")
+                        @yield('code')
                     </div>
 
-                    <div class="ml-4 text-lg uppercase tracking-wider text-gray-500">
-                        @yield("message")
+                    <div class="ml-4 text-lg tracking-wider text-gray-500 uppercase">
+                        @yield('message')
                     </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
-<?php

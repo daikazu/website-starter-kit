@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 @production
     {{-- ADD TRACKING CODES --}}
 
@@ -14,4 +9,3 @@ declare(strict_types=1);
         @vite(['resources/js/event-tracking.js'])
     @endpush
 @endproduction
-<?php

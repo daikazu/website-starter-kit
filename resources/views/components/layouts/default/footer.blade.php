@@ -1,8 +1,3 @@
-<?php
-
-declare(strict_types=1);
-
-?>
 <footer class="bg-primary-900 py-12 text-primary-100">
     <div class="container mx-auto px-4">
         <!-- Main Footer Content -->
@@ -182,4 +177,3 @@ declare(strict_types=1);
         </div>
     </div>
 </footer>
-<?php
